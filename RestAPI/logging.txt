@@ -1,0 +1,85 @@
+Request method:	POST
+Request URI:	https://www.rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "Frontline",
+    "phone_number": "9955226644",
+    "address": "side layout, cohen 09",
+    "website": "http://google.com",
+    "language": "French",
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Fri, 14 Aug 2020 04:54:20 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "bda2fe67fa8d2e479e2078dff44a32aa",
+    "scope": "APP",
+    "reference": "a2f861f8151f71bc8eca586c8876ce40a2f861f8151f71bc8eca586c8876ce40",
+    "id": "a2f861f8151f71bc8eca586c8876ce40"
+}
+Request method:	GET
+Request URI:	https://www.rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=bda2fe67fa8d2e479e2078dff44a32aa
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=bda2fe67fa8d2e479e2078dff44a32aa
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 14 Aug 2020 04:54:22 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 236
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "Frontline",
+    "phone_number": "9955226644",
+    "address": "side layout, cohen 09",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "French"
+}
